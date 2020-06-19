@@ -126,7 +126,7 @@ namespace SpeechScore
                         Run run = new Run(score+"", end);
                         var scoreRange = new TextRange(end,end.GetPositionAtOffset(5));
                         scoreRange.ApplyPropertyValue(TextElement.ForegroundProperty, new SolidColorBrush(l));
-                        scoreRange.ApplyPropertyValue(Run.BaselineAlignmentProperty, BaselineAlignment.Superscript); //上标
+                        scoreRange.ApplyPropertyValue(Run.BaselineAlignmentProperty, BaselineAlignment.Superscript); //superscript
 
                         position = end.GetNextContextPosition(LogicalDirection.Forward);//Move the pointer to // the end of the highlighted text as the start of the next search once the keyword is found
                         break;
